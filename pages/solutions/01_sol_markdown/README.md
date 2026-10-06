@@ -48,3 +48,7 @@ Surprising events this season:
 | McLaren | 316 |
 
 What a surprising position for Ferrari, considering their strategy calls and car problems.
+
+Find more at: [Google Colab](http://colab.research.google.com/)
+
+![Osadzony obraz](wykres.png)
