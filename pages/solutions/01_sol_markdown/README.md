@@ -21,7 +21,7 @@ Races left after the summer break:
 - Qatar
 - Abu Dhabi
 
-Current WDC standings:
+### Current WDC standings:
 1. Kimi Antonelli
 2. George Russell
 3. Lewis Hamilton
@@ -39,3 +39,12 @@ Surprising events this season:
 - [ ] midfield team podium
 - [ ] Double DSQ
 - [x] 3 DNFs at home races
+
+### Top 3 WCC standings
+| Team | Points |
+| --- | --- |
+| Mercedes | 506 |
+| Ferrari | 405 |
+| McLaren | 316 |
+
+What a surprising position for Ferrari, considering their strategy calls and car problems.
