@@ -33,3 +33,9 @@ Current WDC standings:
 9. Liam Lawson
 10. Pierre Gasly
 
+Surprising events this season:
+- [x] Ferrari mistake turned to upgrade
+- [x] George Russell Grand Slam
+- [ ] midfield team podium
+- [ ] Double DSQ
+- [x] 3 DNFs at home races
