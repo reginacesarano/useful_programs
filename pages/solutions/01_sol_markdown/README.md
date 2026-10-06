@@ -51,4 +51,14 @@ What a surprising position for Ferrari, considering their strategy calls and car
 
 Find more at: [Google Colab](http://colab.research.google.com/)
 
-![Osadzony obraz](wykres.png)
+If a driver finishes P5 in all races, his number of points will be:
+```python
+x = 10
+y = 23 * x
+print (y)
+```
+
+$R=R0*(A)^(1/3)$
+
+
+![Projectile motion graph with and without air resistance](wykres.png)
