@@ -3,9 +3,9 @@
 ![Notatki o kropkach kwantowych](zrzut.png)
 
 ## Prompt użyty do wygenerowania tekstu przez AI
-
+```
 Proszę zrób transkrypcję załączonych notatek do kodu Markdown.
-
+```
 ### Finalna werjsa notatki
 
 ## 11. Co to są kropki kwantowe i jakie mają własności?
