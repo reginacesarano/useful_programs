@@ -73,13 +73,20 @@ $E_{k}=\frac{1}{2}M_{car}v^{2}$
 
 Centripetal force acting on the car driving on a circle/curve:
 
-$$F_{Cen}=\frac{M_{car}v^2}{r_{corner}}$$
+$$
+F_{Cen}=\frac{M_{car}v^2}{r_{corner}}
+$$
 
 Maximum cornering force of the tires:
 
-$$F_{max}=\sqrt{\mu_{track}gM_{car}}$$
+$$
+F_{max}=\sqrt{\mu_{track}gM_{car}}
+$$
 
 Maximum cornering speed:
 
-$$v_{max}=\sqrt{\mu_{track}r_{corner}g}$$
+$$
+v_{max}=\sqrt{\mu_{track}r_{corner}g}
+$$
+
 ![Projectile motion graph with and without air resistance](wykres.png)
