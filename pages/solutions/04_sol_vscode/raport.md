@@ -146,19 +146,19 @@ To wartość graniczna dla ruchu pionowego w dół, nie stała prędkość całe
 
 W porównaniu z modelem bez oporu wysokość maksymalna maleje o około $34{,}1\%$, a zasięg o około $45{,}4\%$. Opór skraca również czas lotu, ponieważ ciało traci energię podczas wznoszenia i nie wraca na wysokość startu z taką samą wartością pionowej prędkości.
 
-![Porównanie torów rzutu bez oporu i z oporem kwadratowym; osie pokazują położenie w metrach](wykresy/tor_rzutu.svg)
+![Porównanie torów rzutu bez oporu i z oporem kwadratowym; osie pokazują położenie w metrach](tor_rzutu.png)
 
 *Rysunek 1. Przy $\alpha=85^\circ$ tor bez oporu jest parabolą. Opór obniża wierzchołek i skraca zasięg.*
 
-![Położenie poziome i pionowe jako funkcja czasu dla obu modeli](wykresy/polozenie_czas.svg)
+![Położenie poziome i pionowe jako funkcja czasu dla obu modeli](polozenie_czas.png)
 
 *Rysunek 2. W modelu bez oporu $x(t)$ rośnie liniowo. Z oporem prędkość pozioma maleje; pionowe przebiegi różnią się podczas wznoszenia i opadania.*
 
-![Składowe prędkości poziomej i pionowej w czasie dla obu modeli](wykresy/predkosc_czas.svg)
+![Składowe prędkości poziomej i pionowej w czasie dla obu modeli](predkosc_czas.png)
 
 *Rysunek 3. Bez oporu $v_x$ jest stałe, a $v_y$ zmienia się liniowo. Z oporem obie składowe zmieniają się nieliniowo.*
 
-![Energia mechaniczna w modelu bez oporu oraz z oporem](wykresy/energia.svg)
+![Energia mechaniczna w modelu bez oporu oraz z oporem](energia.png)
 
 *Rysunek 4. Bez oporu energia mechaniczna pozostaje stała. Opór rozprasza energię mechaniczną; energia potencjalna jest liczona względem poziomu startu.*
 
@@ -171,7 +171,7 @@ W porównaniu z modelem bez oporu wysokość maksymalna maleje o około $34{,}1\
 
 ## 5. Kod i odtwarzanie obliczeń
 
-Pełny kod znajduje się w dołączonym pliku [`generuj_wykresy.py`](generuj_wykresy.py). Korzysta tylko z NumPy i Matplotlib, sam całkuje równania metodą RK4, tworzy cztery wykresy SVG i PNG oraz wypisuje wartości końcowe. Uruchom go z terminala w katalogu `pages/solutions/04_sol_vscode`:
+Pełny kod znajduje się w dołączonym pliku [`generuj_wykresy.py`](generuj_wykresy.py). Korzysta tylko z NumPy i Matplotlib, sam całkuje równania metodą RK4, tworzy cztery wykresy PNG obok tego raportu oraz wypisuje wartości końcowe. Uruchom go z terminala w katalogu `pages/solutions/04_sol_vscode`:
 
 ```powershell
 py -m pip install numpy matplotlib
@@ -196,7 +196,7 @@ def krok_rk4(stan, dt, z_oporem):
     return stan + dt * (k1 + 2*k2 + 2*k3 + k4) / 6
 ```
 
-Skrypt zapisuje wyniki do podfolderu `wykresy`. Załączone pliki SVG są czytelne po powiększeniu; uruchomienie skryptu odtwarza je z kodu oraz tworzy wersje PNG.
+Skrypt zapisuje pliki PNG bezpośrednio obok raportu; uruchomienie odtwarza wszystkie obrazy z kodu.
 
 **Weryfikacja w tej sesji:** interpreter `C:\Python312\python.exe` (Python 3.12.2) wykonał niezależny model RK4 bez dodatkowych bibliotek. Otrzymano: bez oporu $T=7{,}514619\,\mathrm{s}$, $h_{\max}=69{,}245714\,\mathrm{m}$, $R=24{,}232860\,\mathrm{m}$; z oporem $T=6{,}105953\,\mathrm{s}$, $h_{\max}=45{,}609442\,\mathrm{m}$, $R=13{,}235556\,\mathrm{m}$. Są zgodne z tabelą po zaokrągleniu. Nie udało się uruchomić dołączonego generatora wykresów: interpreter nie ma zainstalowanych NumPy i Matplotlib, a plik workspace jest dostępny przez GitHub VFS, nie jako ścieżka lokalna terminala.
 

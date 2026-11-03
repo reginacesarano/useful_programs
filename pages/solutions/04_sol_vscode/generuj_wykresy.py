@@ -5,8 +5,7 @@ import numpy as np
 
 
 ROOT = Path(__file__).resolve().parent
-OUT = ROOT / "wykresy"
-OUT.mkdir(parents=True, exist_ok=True)
+OUT = ROOT
 
 v0 = 37.0
 alpha_deg = 85.0
@@ -74,7 +73,6 @@ def symuluj(z_oporem):
 
 def zapisz(fig, nazwa):
     fig.tight_layout()
-    fig.savefig(OUT / f"{nazwa}.svg", bbox_inches="tight")
     fig.savefig(OUT / f"{nazwa}.png", dpi=180, bbox_inches="tight")
     plt.close(fig)
 
