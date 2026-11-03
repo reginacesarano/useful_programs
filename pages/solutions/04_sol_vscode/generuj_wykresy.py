@@ -5,7 +5,8 @@ import numpy as np
 
 
 ROOT = Path(__file__).resolve().parent
-OUT = ROOT
+OUT = ROOT / "wykresy"
+OUT.mkdir(parents=True, exist_ok=True)
 
 v0 = 37.0
 alpha_deg = 85.0
