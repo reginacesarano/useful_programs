@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 
-ROOT = Path(__file__).resolve().parent
+ROOT = Path.cwd()
 OUT = ROOT / "wykresy"
 OUT.mkdir(parents=True, exist_ok=True)
 
