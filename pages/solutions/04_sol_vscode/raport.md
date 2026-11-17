@@ -322,6 +322,7 @@ print(f"Pole przekroju = {area:.6f} m^2, c_drag = {c_drag:.6f} kg/m")
 print(f"Bez oporu: T = {t_vacuum[-1]:.3f} s, h_max = {s_vacuum[:, 1].max():.3f} m, R = {s_vacuum[-1, 0]:.3f} m")
 print(f"Z oporem: T = {t_drag[-1]:.3f} s, h_max = {s_drag[apex, 1]:.3f} m, R = {s_drag[-1, 0]:.3f} m")
 print(f"Wykresy zapisano w: {OUT}")
+```
 
 ## 6. Wnioski i ograniczenia
 
